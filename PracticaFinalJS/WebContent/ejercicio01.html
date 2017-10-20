@@ -14,6 +14,8 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
+<script src="js/codigo.js"></script>
+
 <body>
 	<div class="container">
 		<div class="row justify-content-center">
@@ -26,6 +28,25 @@
 				span justo debajo de esta capa y otro botón para borrar todas las
 				entradas</p>
 		</div>
+
+		<div>
+			<label>cuantos lápices quiere : </label>
+			<input type="number" id="nLapis" ><span id="textLapis"></span>
+			<br>
+			<label>cuantos Rotuladores quiere : </label>
+			<input type="number"  id="nRotu"><span id="textRotu"></span>
+			<br>
+			<label>cuantas Libretas quiere : </label>
+			<input type="number"  id="nLibr"><span id="textLibr"></span>
+
+			<br>
+
+
+			<input type="button" name="calcButton" value="Calcular" onclick="CalcularValores()">
+			<input type="button" name="borrarButtom" value="Borrar" onclick="BorrarValores()">
+		</div>
+		<span id="mensaje"></span>
+
 	</div>
 
 	<!-- Optional JavaScript -->
