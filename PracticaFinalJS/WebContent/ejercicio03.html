@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>Ejercicio01</title>
+<title>Ejercicio03</title>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -13,6 +13,9 @@
 <!-- Stylesheets -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<script src="js/exercicio03.js"></script>
+
+
 </head>
 <body>
 	<div class="container">
@@ -27,6 +30,37 @@
 				importe se mostrará en el campo total. Los orígenes, destinos y
 				precios por persona/trayecto los debes completar como quieras</p>
 		</div>
+	</div>
+
+
+	<div style="margin-left: 30px">
+		<h3>Determine el Origen del Trayecto </h3>
+		<br>
+		<input type="radio" id="orSev"  checked="checked">	<label>Sevilla</label>
+		<br>
+		<input type="radio" id="orHue"  >	<label>Huelva</label>
+		<br>
+		<input type="radio" id="orMal"  >	<label>Málaga</label>
+		<br>
+
+		<h3> Determine el Destino del Trayecto</h3>
+		<br>
+		<input type="radio" id="deCor"  checked="checked">	<label>Córdoba</label>
+		<br>
+		<input type="radio" id="deGra"  >	<label>Granada</label>
+		<br>
+		<input type="radio" id="deMad"  >	<label>Madrid</label>
+
+		<br>
+
+		<label>Número de Pasajeros : </label><input type="number" id="npax" ><span id="textPax"></span>
+		<br>
+
+		<input type="button" name="calcButton" value="Calcular" onclick="CalcularValores()">
+		<input type="button" name="borrarButtom" value="Borrar" onclick="BorrarValores()">
+	</div>
+	<span id="mensaje"></span>
+
 	</div>
 
 	<!-- Optional JavaScript -->
