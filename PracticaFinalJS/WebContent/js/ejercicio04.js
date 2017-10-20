@@ -39,6 +39,7 @@ function CalcularValores() {
 function BorrarValores() {
 
     document.getElementById('mensaje').innerHTML = "";
+    document.getElementById('txtFra').innerHTML = "";
     document.getElementById('n1').value = 0;
     document.getElementById('n2').value = 0;
     document.getElementById('n3').value = 0;
